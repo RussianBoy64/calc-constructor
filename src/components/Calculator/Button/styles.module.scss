@@ -1,0 +1,21 @@
+@import '@styles/colors';
+@import '@styles/presets';
+
+.button {
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid $border-light;
+  @extend %borderRadius;
+  outline: none;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    border: 1px solid $accent;
+  }
+
+  &:active {
+    color: $text-light;
+    background-color: $accent;
+  }
+}

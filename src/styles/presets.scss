@@ -5,5 +5,9 @@
 }
 
 %borderRadius {
-  border-radius: 0.3em;
+  border-radius: 0.4rem;
+}
+
+%transition {
+  transition: all 0.3s ease-in-out;
 }

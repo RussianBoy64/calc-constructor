@@ -1,7 +1,26 @@
 @import '@styles/presets';
 
 .itemWrapper {
+  display: grid;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.3rem;
   @extend %borderRadius;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  &_oneColumn {
+    grid-template-columns: 1fr;
+  }
+
+  &_threeColumns {
+    grid-template-columns: repeat(3, 1fr);
+
+    button:nth-last-child(2) {
+      grid-column: span 2;
+    }
+  }
+
+  &_fourColumns {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
