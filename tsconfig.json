@@ -23,5 +23,5 @@
       "@style/*": ["./src/style/*"]
     }
   },
-  "include": ["src", "src/craco.config.jsg.js", "declaration.d.ts"]
+  "include": ["src", "craco.config.js", "declaration.d.ts", ".eslintrc.json"]
 }
