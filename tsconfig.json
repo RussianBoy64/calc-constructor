@@ -15,7 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@src/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@style/*": ["./src/style/*"]
+    }
   },
-  "include": ["src", "src/craco.config.jsg.js"]
+  "include": ["src", "src/craco.config.jsg.js", "declaration.d.ts"]
 }
