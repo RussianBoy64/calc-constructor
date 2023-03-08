@@ -1,0 +1,10 @@
+@import '@styles/colors';
+@import '@styles/presets';
+
+.display {
+  padding: 0.3rem 0.6rem;
+  text-align: right;
+  font-weight: 800;
+  background-color: $background-gray;
+  @extend %borderRadius;
+}
